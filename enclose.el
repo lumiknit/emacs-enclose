@@ -2,7 +2,9 @@
 
 (defun enclose-next (open close)
   "Enclose next word/s-exp with 'open and 'close."
-  (let ((end (scan-sexps (point) 1)))
+  (let ((end (condition-case nil
+                 (scan-sexps (point) 1)
+               (error (point)))))
     (save-excursion
       (when end (goto-char end))
       (insert close))
