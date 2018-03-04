@@ -80,7 +80,7 @@
   (interactive)
   (enclose-prev "[" "]"))
 
-(global-set-key (kbd "M-(") 'enclose-next-round-parentheses))
+(global-set-key (kbd "M-(") 'enclose-next-round-parentheses)
 (global-set-key (kbd "M-)") 'enclose-prev-round-parentheses)
 (global-set-key (kbd "M-[") 'enclose-next-square-parentheses)
 (global-set-key (kbd "M-]") 'enclose-prev-square-parentheses)
