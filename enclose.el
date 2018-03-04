@@ -85,9 +85,10 @@
 (global-set-key (kbd "M-[") 'enclose-next-square-parentheses)
 (global-set-key (kbd "M-]") 'enclose-prev-square-parentheses)
 ;; Override paragraph movement
-;; (global-set-key (kbd "M-{") 'enclose-next-curly-parentheses)
-;; (global-set-key (kbd "M-}") 'enclose-prev-curly-parentheses)
+(global-set-key (kbd "M-{") 'enclose-next-curly-parentheses)
+(global-set-key (kbd "M-}") 'enclose-prev-curly-parentheses)
 (global-set-key (kbd "M-\"") 'enclose-next-string-quote)
 (global-set-key (kbd "<C-M-backspace>") 'enclose-backward-delete)
+(global-set-key (kbd "C-M-d") 'enclose-delete)
 
 (provide 'enclose)
